@@ -2,10 +2,72 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Quiz Loader</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-</body>
+  <div id="Header">
+    <div id="info">
+      <button id="scores" href="">View High Scores</button>
+      <div id="timer">
+        <p>Time: <span id="time">0</span></p>
+      </div>
+    </div>
+  </div>
 
+
+  <div id="H">
+
+  </div>
+
+  <div id="WellcomeWrapper">
+    <section id="intro">
+      <h1>Coding Quiz Challenge</h1>
+      <p>Try to answer the following code-related questions within the time limit.
+        Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+      </p>
+      <button>Start Quiz</button>
+
+    </section>
+
+    <section id="questionscontainer" class="hide">
+      <p id="title"></p>
+      <button></button>
+      <button></button>
+      <button></button>
+      <button></button>
+
+      <div id="lblscore" class="invisible">
+        <p>&nbsp;</p>
+      </div>
+    </section>
+
+    <section id="finish" class="hide">
+      <h1>Game over</h1>
+      <p>Your score is&nbsp;<span id="score"></span></p>
+      <div id="records">
+        <p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+      </div>
+      <div id="errorIndicator" class="invisible">
+        <p>&nbsp;</p>
+      </div>
+    </section>
+
+    <section id="highScores" class="hide">
+      <h1>High Scores</h1>
+      <div>
+
+      </div>
+      <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+    </section>
+  </div>
+
+  <script src="JavaScript/script.js"></script>
+</body>
 </html>
